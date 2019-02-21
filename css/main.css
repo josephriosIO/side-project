@@ -292,6 +292,7 @@ img {
   }
   body .bio .main-info h1,
   body .bio .main-info h2 {
+    line-height: 1.6;
     text-align: center;
     font-size: 2.3rem;
   }
