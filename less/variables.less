@@ -19,3 +19,19 @@
 .ease-out() {
   transition: all 0.5s ease-out;
 }
+
+.popout() {
+  animation: popout 1s ease;
+  -webkit-animation: popout 1s ease;
+}
+@keyframes popout {
+  from {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}

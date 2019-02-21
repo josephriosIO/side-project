@@ -1,3 +1,14 @@
+@keyframes popout {
+  from {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -251,7 +262,7 @@ img {
   font-weight: 300;
   color: #feffff;
   text-decoration: none;
-  @include easeOut;
+  transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
   color: #17252a;
@@ -333,6 +344,8 @@ header .logo-btn button {
   justify-content: center;
   box-shadow: 10px 10px 5px grey;
   background: #17252a;
+  animation: popout 1s ease;
+  -webkit-animation: popout 1s ease;
 }
 .bio .main-info h1,
 .bio .main-info h2 {
@@ -348,4 +361,42 @@ header .logo-btn button {
   font-size: 1.7rem;
   background: #3aafa9;
   margin-top: 5rem;
+}
+.middle-section {
+  margin-top: 10%;
+}
+.middle-section .text-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #feffff;
+}
+.middle-section .text-content h2 {
+  font-size: 10rem;
+  margin-bottom: 25px;
+}
+.boxes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxes-container .boxes {
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.boxes-container .boxes .box {
+  color: #feffff;
+  margin: 30px 25px;
+  height: 400px;
+  width: 45%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 5px grey;
+  background: #20343a;
 }

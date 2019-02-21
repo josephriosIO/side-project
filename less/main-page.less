@@ -1,0 +1,77 @@
+.bio {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .main-info {
+    height: 400px;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 5px grey;
+    background: @secondary-font-color;
+    .popout();
+
+    h1,
+    h2 {
+      line-height: 1.5;
+      color: @nav-bar-changed;
+    }
+
+    button {
+      border: none;
+      color: @font-color;
+      border-radius: 5%;
+      height: 40px;
+      width: 150px;
+      font-size: 1.7rem;
+      background: @background-color;
+      margin-top: 5rem;
+    }
+  }
+}
+
+.middle-section {
+  margin-top: 10%;
+
+  .text-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: @font-color;
+
+    h2 {
+      font-size: 10rem;
+      margin-bottom: 25px;
+    }
+  }
+}
+.boxes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .boxes {
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    .box {
+      color: @font-color;
+      margin: 30px 25px;
+      height: 400px;
+      width: 45%;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 10px 10px 5px grey;
+      background: lighten(@secondary-font-color, 5%);
+    }
+  }
+}

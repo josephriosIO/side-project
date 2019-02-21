@@ -1,60 +1,7 @@
+@import "variables";
 @import "reset";
 @import "global";
-@import "variables";
+@import "menu-btn";
 @import "mobile";
-
-header {
-  .logo-btn {
-    margin: 25px 20px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    button {
-      border: none;
-      color: @font-color;
-      border-radius: 10%;
-      height: 30px;
-      width: 80px;
-      font-size: 1.2rem;
-      background: @button-color;
-      margin-right: 10rem;
-    }
-  }
-}
-
-.bio {
-  margin-top: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .main-info {
-    height: 400px;
-    width: 50%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 10px 10px 5px grey;
-    background: @secondary-font-color;
-
-    h1,
-    h2 {
-      line-height: 1.5;
-      color: @nav-bar-changed;
-    }
-
-    button {
-      border: none;
-      color: @font-color;
-      border-radius: 5%;
-      height: 40px;
-      width: 150px;
-      font-size: 1.7rem;
-      background: @background-color;
-      margin-top: 5rem;
-    }
-  }
-}
+@import "header";
+@import "main-page";
