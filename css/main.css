@@ -162,7 +162,7 @@ img {
   margin: 0 auto;
 }
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   right: 35px;
   top: 35px;
@@ -212,7 +212,7 @@ img {
   overflow: hidden;
 }
 .menu-nav {
-  opacity: 0.65;
+  opacity: 0.95;
   margin: 0;
   padding: 0;
   background: #349c97;
@@ -224,7 +224,7 @@ img {
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  opacity: 0.97;
+  opacity: 0.9;
   background: #3aafa9;
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
@@ -292,6 +292,38 @@ header .logo-btn button {
   border-radius: 10%;
   height: 30px;
   width: 80px;
+  font-size: 1.2rem;
   background: #17252a;
   margin-right: 10rem;
+}
+.bio {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bio .main-info {
+  height: 400px;
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 5px grey;
+  background: #17252a;
+}
+.bio .main-info h1,
+.bio .main-info h2 {
+  line-height: 1.5;
+  color: #def2f1;
+}
+.bio .main-info button {
+  border: none;
+  color: #feffff;
+  border-radius: 5%;
+  height: 40px;
+  width: 150px;
+  font-size: 1.7rem;
+  background: #3aafa9;
+  margin-top: 5rem;
 }
